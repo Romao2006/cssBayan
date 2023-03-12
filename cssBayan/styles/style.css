@@ -1,0 +1,142 @@
+body {
+  background-color: rgb(214, 171, 119);
+}
+
+h1 {
+  font-family: "Karla", sans-serif;
+  font-size: 2rem;
+ color:brown;
+}
+
+.accordion {
+  max-width: 56.25rem;
+  margin: 0 auto;
+  padding: 1rem 0.938rem;
+}
+
+.accordion:hover label {
+    color: rgb(117, 117, 117);
+  }
+
+  .accordion__info {
+    background-color: #fff;
+  }
+
+.accordion__info:hover label {
+  color: rgba(19, 75, 216, 0.897);
+}
+
+.accordion__info input {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.accordion__info label:before {
+  content: "\276F";
+}
+
+.accordion__info input:checked + label:before {
+  transition: transform 0.35s;
+  transform: rotate(90deg);
+}
+
+label {
+  position: relative;
+  display: block;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.accordion__info:not(:last-child) {
+  border-bottom: 0.313rem solid #e8e8e8;
+}
+
+.accordion__info label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 0.75rem 1.063rem;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.acсordion__body {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  transition: all 3s ease-in-out;
+}
+
+.acсordion__body:active img {
+  filter: brightness(30%);
+  border-radius: 0.938rem;
+}
+
+.acсordion__body:active img {
+  filter: brightness(30%);
+  border-radius: 0.938rem;
+}
+
+.acсordion__body img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.9s ease-in-out;
+}
+
+.acсordion__body img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.9s ease-in-out;
+}
+
+.accordion__item-input:checked ~ .acсordion__body ,
+.accordion__item:hover .acсordion__body{
+  height: 20rem;
+  padding: 1.5rem 0.5rem;
+}
+
+
+@media screen and (min-width: 1180px) {
+.accordion__item-input:checked ~ .acсordion__body ,
+.accordion__item:hover .acсordion__body{
+  height: 20rem;
+  padding: 1.5rem 0.5rem;
+}
+
+.accordion__info label {
+  font-size: 35px
+}
+}
+
+@media screen and (max-width: 820px) {
+h1 {
+  font-size: 1rem;
+}
+
+.accordion__info label {
+  font-size: 30px;
+}
+}
+
+@media screen and (max-width: 320px) {
+h1 {
+  font-size: 0.8rem;
+}
+
+.accordion__info label  {
+font-size: 25px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+}
+
+.accordion__info label:before {
+    content: "";
+  }
+}
