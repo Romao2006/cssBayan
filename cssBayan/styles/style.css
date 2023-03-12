@@ -33,12 +33,11 @@ h1 {
 }
 
 .accordion__info label:before {
-  content: "\276F";
+  content: "+";
 }
 
 .accordion__info input:checked + label:before {
-  transition: transform 0.35s;
-  transform: rotate(90deg);
+  content: "-";
 }
 
 label {
@@ -77,11 +76,6 @@ label {
   border-radius: 0.938rem;
 }
 
-.acсordion__body:active img {
-  filter: brightness(30%);
-  border-radius: 0.938rem;
-}
-
 .acсordion__body img {
   max-width: 100%;
   max-height: 100%;
@@ -95,7 +89,7 @@ label {
 }
 
 .accordion__item-input:checked ~ .acсordion__body ,
-.accordion__item:hover .acсordion__body{
+.accordion__item-input:hover .acсordion__body{
   height: 20rem;
   padding: 1.5rem 0.5rem;
 }
@@ -103,7 +97,7 @@ label {
 
 @media screen and (min-width: 1180px) {
 .accordion__item-input:checked ~ .acсordion__body ,
-.accordion__item:hover .acсordion__body{
+.accordion__item-input:hover .acсordion__body{
   height: 20rem;
   padding: 1.5rem 0.5rem;
 }
